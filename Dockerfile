@@ -10,8 +10,8 @@ RUN java -version
 
 WORKDIR /opt
 RUN curl -O http://apachemirror.wuchna.com/tomcat/tomcat-7/v7.0.96/bin/apache-tomcat-7.0.96.tar.gz
-RUN tar xzvf apache-tomcat-8.5.42.tar.gz -C /opt/
-RUN cp -R /opt/apache-tomcat-8.5.42/ /opt/tomcat
+RUN tar xzvf apache-tomcat-7.0.96.tar.gz -C /opt/
+RUN cp -R /opt/apache-tomcat-7.0.96/ /opt/tomcat
 
 WORKDIR /opt/tomcat/webapps
 COPY target/webapp.war .
